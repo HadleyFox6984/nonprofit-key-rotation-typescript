@@ -1,0 +1,8 @@
+{
+  "name": "nonprofit-key-rotation-typescript",
+  "private": true,
+  "type": "module",
+  "scripts": {"demo": "node --experimental-strip-types src/rotation_service.ts", "test": "node --experimental-strip-types src/rotation_test.ts", "typecheck": "tsc --noEmit"},
+  "dependencies": {"zod": "^3.24.0"},
+  "devDependencies": {"typescript": "^5.7.0", "@types/node": "^22.0.0"}
+}

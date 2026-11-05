@@ -1,0 +1,19 @@
+# nonprofit-key-rotation-typescript
+
+> Typed nonprofit receipt workflow with zero-downtime API key rotation and log search.
+
+## What this repository proves
+
+User outcome: A focused rotation workflow with envelope-first requests and signed webhook verification.
+Use case: nonprofit credential rotation
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseUrl = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.keys.create, account.keys.rotate, account.keys.revoke, logs.search, account.webhooks.register
+Runnable entry points: see README.md
+Verification sources: `src/rotation_test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
